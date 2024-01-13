@@ -33,17 +33,29 @@ p{
     text-transform: uppercase;
     text-decoration: none;
 }
-.intro div.introdl{
+.DLcontainer {
     display: flex;
     flex-direction: row;
-    gap: 24%;
 }
+
 .introdl dl{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    width: 100%;
+    grid-column: 25% 25%;
 } 
 .introdl dt::before{
     content: "◼ ";
 }
+.introdl dt{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-right: 10px;
+
+}
+.introdl dd{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+}
+
 
