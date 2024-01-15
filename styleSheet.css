@@ -5,6 +5,10 @@
 html{
     background-color: #0b0c2a;
 }
+body{
+    margin: 0;
+    padding: 0;;
+}
 h1, h3, h4, p, .intro dd{
     color: white;
 }
@@ -22,40 +26,73 @@ h3{
 p{
       font-size: 1.125rem;
 }
+.intro h1, .intro h4, .intro p{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
 .anime_download a{
     color: white;
     font-size: 13px;
     font-weight: 700px;
     text-align: center;
-    background-color: red;
-    padding: 10px 15px;
+    background-color: #e53637;
+    padding: 14px 20px;
     border-radius: 5px;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 2px;
 }
+.intro{
+    display: grid;
+    grid-template-columns: 1.25fr auto;
+    padding: 60px 0px 100px;
+    margin-right: 5%;
+    margin-left: 5%;
+    column-gap: 25px;
+    line-height: 30px;
+    border:1px;
+}
+.pic img{
+    border: 2px;
+    width: fit-content;
+    border-radius: 3px;
+}
+
 .DLcontainer {
     display: flex;
     flex-direction: row;
 }
-
-.introdl dl{
+.introdl1{
+    flex: 50%;
+}
+.introdl2{
+    flex: 50%;
+    margin-right: 20px;
+}
+.introdl1 dl , .introdl2 dl{
     display: grid;
-    width: 100%;
+    width: 90%;
     grid-column: 25% 25%;
+    margin: 0 50px 0 0;;
+    column-gap: 3px;
 } 
-.introdl dt::before{
+.introdl1 dt::before, .introdl2 dt::before{
     content: "◼ ";
 }
-.introdl dt{
+.introdl1 dt ,.introdl2 dt{
     grid-column-start: 1;
     grid-column-end: 2;
     margin-right: 10px;
-
 }
-.introdl dd{
+.introdl1 dd ,.introdl2 dd{
     grid-column-start: 2;
     grid-column-end: 3;
     margin: 0;
+    padding-right: 5%;
+} 
+.animelink{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
 }
-
 
